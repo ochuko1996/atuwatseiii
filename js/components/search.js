@@ -1,17 +1,16 @@
 // search filter
 import { profileOfOba    } from "../crest-list.js";
-const input = document.getElementById('input').value
+const searchInput = document.getElementById('search-input');
+const rulerName = document.querySelectorAll('.rulerDetails .rulername');
 
-// const filterText = "olu"
-// const filterData = profileOfOba.filter(data=>data.name.toLowerCase().includes(filterText.toLowerCase()))
-// console.log(filterData);
-
-const alfa = "CHIGOZIE"
-
-console.log(alfa.includes("c"));
-
-if (alfa.toLowerCase().includes('c')) {
-    console.log(alfa);
-}else{
-    console.log("");
-}
+searchInput.addEventListener('keyup',()=>{
+    for (let i = 0 ; i < rulersDetailsContainers.length ; i++){
+       if (rulerName[i].innerText.toLowerCase().includes(searchInput.value.toLowerCase())) {
+          rulersDetailsContainers[i].classList.remove('d-none');
+       }
+       else {
+          rulersDetailsContainers[i].classList.add('d-none');
+       }
+   }
+ })
+ 
