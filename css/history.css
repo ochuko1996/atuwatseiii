@@ -1,17 +1,147 @@
 @import url(../css/style.css);
 /*  */
 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.historySlider{
+    background-image: url(./Images/undefined.html);
+    height: 100vh;
+    width: 40vw;
+    border-right: #fff 1px solid;
+}
+
+.backArrow{
+    padding: 40px 0 10px 40px;
+}
+
+.backArrow a{
+    text-decoration: none;
+}
+
+.arrow{
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer; 
+
+}
+.carousel{
+    position: relative;
+    padding: 0;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide{
+    padding: 0;
+} 
+
+.carouselImg{
+    padding: 0;
+    margin: 0; 
+    width: 70%;
+}
+
+.prev, .next{
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    width: 20px;
+    height: 40px;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 7px;
+    border: 0.5px solid #000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.prev{
+    left: 40px;
+}
+
+.next{
+    right: 40px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.hideImg{
+    display: none;
+}
+
+
 /* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .historySlider{
+        width: 100%;
+    }
+    .carousel{
+        width: 100%;
+        border: 1px solid #000;
+    }
+}
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .historySlider{
+        width: 100%;
+    }
+    .carousel{
+        width: 100%;
+        border: 1px solid #000;
+    }
+}
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .historySlider{
+        width: 100%;
+    }
+    .carousel{
+        width: 100%;
+        border: 1px solid #000;
+        height: 100%;
+    }
+    .backArrow{
+        padding: 40px 0 40px 40px;
+    }
+    .carouselImg{
+        margin-top: 80px;
+        padding-top: 100px;
+    }
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {}
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {}
+
