@@ -76,3 +76,4 @@ for (let i = 0; i < profileOfOba.length; i++) {
        rulerBiography.innerText = biography.textContent;
     })
  })
+
