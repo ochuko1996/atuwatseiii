@@ -1,6 +1,7 @@
 // search filter
 // import { profileOfOba    } from "../crest-list.js";
 const searchInput = document.getElementById('search-input');
+const rulersDetailsContainers = document.querySelectorAll('.rulerDetails');
 const rulerName = document.querySelectorAll('.rulerDetails .rulername');
 
 searchInput.addEventListener('keyup',()=>{
