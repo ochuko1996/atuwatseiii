@@ -1,7 +1,6 @@
 // search filter
 import { rulersDetailsContainers } from "./profile.js";
 const searchInput = document.getElementById('search-input');
-const rulersDetailsContainers = document.querySelectorAll('.rulerDetails');
 const rulerName = document.querySelectorAll('.rulerDetails .rulername');
 
 searchInput.addEventListener('keyup',()=>{
