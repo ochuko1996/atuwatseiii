@@ -335,9 +335,7 @@ h2 {
 @media screen and (min-width: 1200px) {
     .bg-image {
         display: block;
-    }
-    .bg-image {
-        background-image: url('../assets/ginuwa.e4765c1eb1bbf7324286.png');
+        background-image: url('https://atuwatseiii.com/static/media/ginuwa.e4765c1eb1bbf7324286.png');
         background-size: cover;
         background-position: center;
         height:inherit;
