@@ -77,3 +77,4 @@ for (let i = 0; i < profileOfOba.length; i++) {
     })
  })
 
+ export { rulersDetailsContainers}
