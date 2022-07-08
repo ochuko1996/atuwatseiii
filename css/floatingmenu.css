@@ -7,10 +7,16 @@
     transform: translateX(-50%);
     width: 93%;
     height: 140px;
+    overflow: hidden;
+}
+
+.menu-layout{
+    position: relative;
+    height: 100px;
 }
 
 .menu-toggle{
-    padding-top: 85px;
+    padding-top: 105px;
 }
 
 .menu{
@@ -21,7 +27,8 @@
     background-color: var(--clr-red);
     border-radius: 30px;
     height: 60px;
-    margin-top: 20px;;
+    margin-top: 20px;
+
 }
 
 .menu-box{
@@ -81,7 +88,7 @@
 .menu-open-close{
     position: absolute;
     left: 50%;
-    top: 0px;
+    top: -10px;
     transform: translateX(-50%);
     background-color: var(--clr-red);
     width: 35px;
@@ -92,12 +99,15 @@
     align-items: center;
     text-align: center;
     color: var(--white);
-    z-index: 1;
+    z-index: 10;
     cursor: pointer;
     user-select: none;
 }
 
-
+.open-close-icon .fa{
+    color: var(--clr-white);
+    z-index: 999;
+}
 
 @media only screen and (min-width: 600px){
     .floating-menu-section{

@@ -1,7 +1,7 @@
 
 const log = console.log;
 const menuToggle = document.getElementById("menu-toggle");
-const menuSection = document.querySelector('.menu-section');
+const menuSection = document.querySelector('.floating-menu-section');
 
 menuToggle.addEventListener("click", ()=>{
     menuSection.classList.toggle("menu-toggle");

@@ -29,7 +29,7 @@ body{
 }
 
 body{
-    background-image: url(/assets/main_banner.png);
+    background-image: url(../assets/main_banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -39,7 +39,7 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+ 
 .navbar{
     display: flex;
     -webkit-box-pack: justify;
