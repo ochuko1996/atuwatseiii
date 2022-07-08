@@ -29,15 +29,16 @@ body{
 }
 
 body{
-    background-image: url(../assets/main_banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
+   
 }
 
 .main-section{
     width: 100vw;
     height: 100vh;
+    background-image: url(../assets/main_banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
 }
  
 .navbar{
