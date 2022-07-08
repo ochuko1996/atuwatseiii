@@ -16,7 +16,7 @@ p,
 body{
     font-family: 'Roboto', sans-serif;
     /* testing-background */
-    background-color: var(--clr-red);
+    /* background-color: var(--clr-red); */
 }
 :root{
     /* color */
