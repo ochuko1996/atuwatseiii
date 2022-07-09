@@ -1,5 +1,5 @@
 // search filter
-import { rulersDetailsContainers } from "./profile.js";
+import { profileOfOba    } from "../crest-list.js";
 const searchInput = document.getElementById('search-input');
 const rulerName = document.querySelectorAll('.rulerDetails .rulername');
 
