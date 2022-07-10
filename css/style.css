@@ -28,20 +28,15 @@ body{
     --fs-link: 12.8px;
 }
 
-<<<<<<< HEAD
-body{
-   
-}
-=======
->>>>>>> 824b41b576ea149671bb438c6da9eb6d75ec9b89
+
 
 .main-section{
     width: 100vw;
     height: 100vh;
     background-image: url(../assets/main_banner.png);
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    background-size: cover;
 }
  
 .navbar{
