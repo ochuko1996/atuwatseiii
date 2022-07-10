@@ -3,5 +3,3 @@
 import { chiefDetailsContainers } from "../components/profile.js";
 const search = document.getElementById('search-input')
 const names = document.querySelectorAll('.overflow-heading')
-
-console.log(names)
