@@ -8,8 +8,13 @@
     padding: 0;
 }
 
+.history-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
 .historySlider{
-    background-image: url(./Images/undefined.html);
     height: 100vh;
     width: 40vw;
     border-right: #fff 1px solid;
@@ -106,6 +111,9 @@
     .carousel{
         width: 100%;
     }
+    .history-container{
+        flex-direction: column;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -141,4 +149,5 @@
 
 /* X-Large devices (large desktops, less than 1400px) */
 @media (max-width: 1399.98px) {}
+
 
