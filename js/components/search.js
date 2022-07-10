@@ -1,17 +1,7 @@
 // search filter
-import { profileOfOba    } from "../crest-list.js";
-const input = document.getElementById('input').value
+//traditional council search
+import { chiefDetailsContainers } from "../components/profile.js";
+const search = document.getElementById('search-input')
+const names = document.querySelectorAll('.overflow-heading')
 
-// const filterText = "olu"
-// const filterData = profileOfOba.filter(data=>data.name.toLowerCase().includes(filterText.toLowerCase()))
-// console.log(filterData);
-
-const alfa = "CHIGOZIE"
-
-console.log(alfa.includes("c"));
-
-if (alfa.toLowerCase().includes('c')) {
-    console.log(alfa);
-}else{
-    console.log("");
-}
+console.log(names)
