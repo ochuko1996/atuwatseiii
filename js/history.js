@@ -1,7 +1,6 @@
 let slides = document.querySelectorAll(".carouselImg");
 let prev = document.querySelector(".prev");
 let next = document.querySelector(".next");
-let log = console.log;
 let counter = 0;
 
 const hideAll = ()=>{
