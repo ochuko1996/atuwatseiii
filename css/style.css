@@ -29,20 +29,8 @@ body{
     /* font-size */
     --fs-link: 12.8px;
 }
-.hamburger{
-    position: fixed;
-    display: none;
-    top: 1.2rem;
-    left: 1.2rem;
-    transform: scale(1.1);
-}
-.hambuger-menu{
-    display: flex;
-    bottom: -100%;
-    transition: all 0.1s ease-in-out;
-    position: fixed;
-    
-}
+
+
 .line{
     align-self: center;
     height: 4px;
@@ -122,9 +110,9 @@ body{
     display: none;
 }
 
-.hamburger{
+/* .hamburger{
     display: block;
-}
+} */
 
 .nav-menu{
     display: none;
@@ -203,7 +191,50 @@ body{
     font-size: 0.8rem;
     overflow-y:auto;
 }
-
+.overlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+.overlay.active{
+    display: block;
+}
+.hamburger{
+    display: flex;
+    position: fixed;
+    top: 1.1rem;
+    left: 1.2rem;
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 9;
+}
+.hambuger-menu{
+    display: flex;
+    bottom: -100%;
+    transition: all 0.1s ease-in-out;
+    position: fixed;
+    
+}
+.hambuger-menu.active{
+    flex-direction: column;
+    z-index: 20;
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: fixed;
+    top: 30%;
+    height: 70%;
+    padding: 30px;
+    border-radius: 30px 30px 0px 0px;
+    bottom: 0;
+}
 
 
 
@@ -227,9 +258,9 @@ body{
         display: block;
     }
     
-    .hamburger{
+    /* .hamburger{
          display: none;
-    }
+    } */
  
     .nav-menu{
          display: block;
@@ -245,6 +276,19 @@ body{
         font-weight: bold;
         z-index: 500;
     }
+    .hamburger{
+        display: none;
+    }
+    .hambuger-menu{
+        display: none;
+    }
+    .overlay{
+        display: none;
+    }
+    .overlay.active{
+        display: none;
+    }
+    
     
  }
 
@@ -256,22 +300,7 @@ body{
     .arrow-left{
         display: none;
        }
-    .hamburger{
-        display: flex;
-    }
-    .hambuger-menu.active{
-        flex-direction: column;
-        z-index: 2;
-        background-color: white;
-        color: black;
-        width: 100%;
-        position: fixed;
-        top: 30%;
-        height: 70%;
-        padding: 30px;
-        border-radius: 30px 30px 0px 0px;
-        bottom: 0;
-    }
+    
  }
 
  /* X-Large devices (large desktops, less than 1400px) */
