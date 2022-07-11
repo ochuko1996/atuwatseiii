@@ -40,6 +40,10 @@ h2 {
 .letter-spacing {
     letter-spacing:0;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 .ac {
     width: 40%;
 }
@@ -143,7 +147,7 @@ h2 {
     background-color: var(--clr-white);
 }
 .ruling-leaders-div {
-    height: 63vh;
+    height: 65vh;
     overflow-y: scroll;
     scrollbar-color: var(--clr-dark-grey) var(--clr-red);
     padding: 0.7em 0;
