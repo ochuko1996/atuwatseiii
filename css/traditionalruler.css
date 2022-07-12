@@ -44,8 +44,8 @@ body{
 }
 .text-container{
     width:60%;
-    /* padding: 20px 0 24px 24px; */
 }
+
 .up-section{
     background-color: rgb(255,255,255);
     padding: 0 24px 0 0;
@@ -188,6 +188,9 @@ body{
     align-self: auto;
    
 }
+.child-container:hover{
+    background-color: rgb(211,55,52);
+}
 .right-image{
     padding: 0px 5px 0px 0px;
     margin: 0px 0px 10px;
@@ -200,4 +203,40 @@ body{
 .right-down-para{
     font-size: 0.7rem;
     margin-top: 15px;
+}
+@media screen and (max-width: 576px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .image-container{
+        display: none;
+    }
+    .right-image{
+        display: none;
+    }
+    .right-down-section{
+        display: none;
+    }
+    .left-down-section{
+        width:100%;
+    }
+    .input-container{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .circular-div{
+        display: none;
+    }
+    .up-section{
+        height: 200px;
+    }
+    .council-1{
+        margin-top: 30px;
+    }
 }
