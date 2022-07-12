@@ -216,11 +216,15 @@ a {
 }
 @media screen and (max-width: 567px) {
     .rulers-display,
-    .ruling-leaders-div::-webkit-scrollbar {
+    .ruling-leaders-div::-webkit-scrollbar, 
+    .backward-arrow{
         display: none;
     }
     .z-index {
         z-index: 10;
+    }
+    .ruling-house-title h2{
+        padding-top: 28px;
     }
 }
 @media screen and (min-width: 567px) {
