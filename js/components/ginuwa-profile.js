@@ -51,13 +51,14 @@ for (let i = 0; i < profileOfOba.length; i++) {
     biography.innerHTML =  profileOfOba[i]. biography;   
  }
  
- const rulersDetailsContainers = document.querySelectorAll('.rulerDetails');
- const imgDisplay = document.getElementById('img-display');
- const nameDisplay = document.getElementById('name-display');
- const rulerLifeSpan = document.getElementById('ruler-life-span');
- const reignStart = document.getElementById('reign-start');
- const reignEnd = document.getElementById('reign-end');
- const rulerBiography = document.getElementById('ruler-biography');
+const rulersDetailsContainers = document.querySelectorAll('.rulerDetails');
+const imgDisplay = document.querySelectorAll('#img-display');
+const nameDisplay = document.querySelectorAll('#name-display');
+const rulerLifeSpan = document.querySelectorAll('#ruler-life-span');
+const reignStart = document.querySelectorAll('#reign-start');
+const reignEnd = document.querySelectorAll('#reign-end');
+const rulerBiography = document.querySelectorAll('#ruler-biography');
+const rulerDisplay = document.querySelectorAll('#ruler-display');
 
 
  rulersDetailsContainers.forEach((rulerDetailsContainer)=> {
@@ -68,13 +69,30 @@ for (let i = 0; i < profileOfOba.length; i++) {
        const reignstart = e.currentTarget.lastChild.lastChild.previousElementSibling.firstChild;
        const reignend = e.currentTarget.lastChild.lastChild.previousElementSibling.lastChild;
        const biography = e.currentTarget.lastChild.lastChild;
-       imgDisplay.setAttribute('src' , img.src);
-       nameDisplay.innerText =  name.textContent;
-       rulerLifeSpan.innerText =  lifeSpan.textContent;
-       reignStart.innerHTML =  reignstart.innerHTML;
-       reignEnd.innerHTML =  reignend.innerHTML;
-       rulerBiography.innerText = biography.textContent;
+       rulerDisplay[1].classList.toggle('show-mobile-pop-up');
+       nameDisplay.forEach((displayname)=> {
+          displayname.innerText =  name.textContent;
+       })
+       imgDisplay.forEach((display)=> {
+          display.setAttribute('src' , img.src);
+       })
+       rulerLifeSpan.forEach((lifespan)=> {
+          lifespan.innerText =  lifeSpan.textContent;
+       })
+       rulerLifeSpan.forEach((lifespan)=> {
+          lifespan.innerText =  lifeSpan.textContent;
+       })
+       reignStart.forEach(( start)=> {
+          start.innerHTML =  reignstart.innerHTML;
+       })
+       reignEnd.forEach(( end)=> {
+          end.innerHTML =  reignend.innerHTML;
+       })
+       rulerBiography.forEach(( rulerbiography)=> {
+          rulerbiography.innerText = biography.textContent;
+       })
+       })
+ 
     })
- })
 
  export {rulersDetailsContainers}
