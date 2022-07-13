@@ -126,6 +126,10 @@ body{
     padding-right: 30px;
 }
 
+.nav-anchor:hover{
+    border-bottom: 1px solid red;
+    padding-bottom: 8px;
+}
 .nav-list a{
     color: #fff;
     text-decoration: none; 
