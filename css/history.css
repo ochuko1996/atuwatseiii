@@ -302,7 +302,7 @@ body {
         background-color: none;
         margin-top: 5%;
         max-height: none;
-        overflow-y: hidden;
+        overflow-y: scroll;
     }
 }
 
