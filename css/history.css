@@ -308,6 +308,12 @@ body {
     color: #212529;
     margin: 0px 10px 8px 10px ;
 }
+    .paragraph {
+    padding-top: .5rem;
+    margin: 0px 15px 8px 10px ;
+
+}
+    
 }
 
 /* Small devices (landscape phones, less than 768px) */
