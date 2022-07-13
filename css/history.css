@@ -302,6 +302,7 @@ body {
         flex-direction: column;
         background-color: none;
         margin-top: 5%;
+        padding: 20px 10px;
         max-height: none;
         overflow-y: hidden;
     }
