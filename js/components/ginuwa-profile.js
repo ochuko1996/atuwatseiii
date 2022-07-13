@@ -60,9 +60,8 @@ const reignEnd = document.querySelectorAll('#reign-end');
 const rulerBiography = document.querySelectorAll('#ruler-biography');
 const rulerDisplay = document.querySelectorAll('#ruler-display');
 
-
- rulersDetailsContainers.forEach((rulerDetailsContainer)=> {
-    rulerDetailsContainer.addEventListener('click' , (e)=>{
+ rulersDetailsContainers.forEach(rulerDetailsContainer =>{
+    rulerDetailsContainer.addEventListener('click' , (e) =>{
        const img = e.currentTarget.firstChild.firstChild;
        const name = e.currentTarget.firstChild.nextSibling.firstChild;
        const lifeSpan = e.currentTarget.firstChild.nextSibling.firstChild.nextSibling;
@@ -70,29 +69,25 @@ const rulerDisplay = document.querySelectorAll('#ruler-display');
        const reignend = e.currentTarget.lastChild.lastChild.previousElementSibling.lastChild;
        const biography = e.currentTarget.lastChild.lastChild;
        rulerDisplay[1].classList.toggle('show-mobile-pop-up');
-       nameDisplay.forEach((displayname)=> {
+       nameDisplay.forEach(displayname =>{
           displayname.innerText =  name.textContent;
        })
-       imgDisplay.forEach((display)=> {
+       imgDisplay.forEach(display =>{
           display.setAttribute('src' , img.src);
        })
-       rulerLifeSpan.forEach((lifespan)=> {
+       rulerLifeSpan.forEach(lifespan =>{
           lifespan.innerText =  lifeSpan.textContent;
        })
-       rulerLifeSpan.forEach((lifespan)=> {
-          lifespan.innerText =  lifeSpan.textContent;
-       })
-       reignStart.forEach(( start)=> {
+       reignStart.forEach(start =>{
           start.innerHTML =  reignstart.innerHTML;
        })
-       reignEnd.forEach(( end)=> {
+       reignEnd.forEach(end =>{
           end.innerHTML =  reignend.innerHTML;
        })
-       rulerBiography.forEach(( rulerbiography)=> {
+       rulerBiography.forEach(rulerbiography =>{
           rulerbiography.innerText = biography.textContent;
        })
        })
- 
     })
 
  export {rulersDetailsContainers}
