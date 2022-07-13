@@ -308,11 +308,7 @@ body {
     .para-text {
     font-size: 0.8rem;
     margin: 0px 0px 8px;
-    width: 100%;
-    margin-block-start: 0.87em;
-    margin-block-end: 0.87em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    width: 100vw;
 }
     
 }
