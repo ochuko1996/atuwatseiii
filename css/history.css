@@ -264,7 +264,7 @@ body {
         padding-top: -10px;
     }
     .container{
-        height: 100%;
+        height: 4000px;
     }
     .history-container{
         flex-direction: column;
