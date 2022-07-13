@@ -6,11 +6,12 @@
     padding:0;
 }
 :root {
-    --clr-grey:#f4f4f4;
+    --clr-grey:rgb(245, 245, 245);
     --clr-dark-grey: rgb(184, 184, 184);
     --clr-red: rgb(211, 0, 2);
     --clr-white: rgb(255, 255, 255);
     --clr-black: #212529;
+    /* --clr-mobile-popup-background: rgb(245, 245, 245); */
 }
 p,
 h1,
@@ -107,6 +108,9 @@ a {
 .p-top-3 {
     padding-top: 1.5em;
 }
+.p-top-4 {
+    padding-top: 0.1rem;
+}
 .h-100 {
     height:100vh;
 }
@@ -149,12 +153,12 @@ a {
     height: 65vh;
     overflow-y: scroll;
     scrollbar-color: var(--clr-dark-grey) var(--clr-red);
-    padding: 0.7em 0;
+    padding: 0.53em 0;
 }
 .ruling-leaders-list > div{
    background-color: var(--clr-white);
    border-radius: 10px;
-   padding: 12px;
+   padding: 12px 0px 12px 12px;
    margin-bottom: 10px;
 }
 .ruling-leaders-list > div:hover{
@@ -162,19 +166,17 @@ a {
     color: var(--clr-white);
     cursor: pointer;
 }
-.ruling-leaders-list {
-    padding: 0 1.35rem;
-}
-.rulers-display {
-    padding: 0  1rem 0 1.35rem;
+.ruling-leaders-list ,
+.rulers-display{
+    padding: 0 22px;
 }
 .ruling-leaders-div::-webkit-scrollbar {
-    width:4.5px;
+    width:4.7px;
     background-color: var(--clr-dark-grey);
     border-radius: 8px;
 }
 .ruling-leaders-div::-webkit-scrollbar-thumb:hover {
-    width:4.5px;
+    width:4.7px;
     background-color: var(--clr-red);
 }
 .col-1{
@@ -214,8 +216,7 @@ a {
     width:99.96%;
 }
 @media screen and (max-width: 567px) {
-    .rulers-display,
-    .ruling-leaders-div::-webkit-scrollbar, 
+    .rulers-display, 
     .main-arrow{
         display: none;
     }
@@ -224,18 +225,21 @@ a {
     }
     .backward-arrow {
         border: none;
-        background-color: var(--clr-grey);
+        background-color: rgb(238, 238, 238);
     }
     .mobile-pop-up {
         display: none;
         position: fixed;
         width:100vw;
         top:0;
-        background-color:var(--clr-white);
+        background-color:var( --clr-grey);
         padding: 1.2em;
     }
+    .border {
+        border: 1px solid black;
+    }
     .mobile-pop-up-details {
-        padding: 2em 3em 0 1em;
+        padding: 40px 24px;
     }
     .show-mobile-pop-up {
         display: block;
