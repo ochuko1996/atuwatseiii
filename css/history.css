@@ -303,6 +303,7 @@ body {
         margin-top: 5%;
         max-height: none;
         overflow-y: hidden;
+        width: 100%;
     }
 }
 
