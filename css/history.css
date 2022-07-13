@@ -138,10 +138,10 @@ body {
     display: flex;
     flex-direction: column;
     background: white;
-    padding: 42px 50px 42px 0;
+    padding: 42px 40px 42px 0px;
     border-radius: 8px;
     max-height: 73vh;
-    width: 100%; 
+    width: 97%; 
     overflow-y: scroll;   
 }
 
@@ -305,6 +305,7 @@ body {
         max-height: none;
         overflow-y: hidden;
         padding: 42px 0px 42px 0px;
+        width: 100%;
     }
     .para-text {
     font-size: 0.8rem;
