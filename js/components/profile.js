@@ -1,176 +1,62 @@
 // profile of oba
-import { profileOfOba } from "../crest-list.js";
-const crestCardContainer = document.querySelector('.crest-card-container')
-const input = document.getElementById('input')
+
+import {rulingDetails } from "../crest-list.js";
+
+const leftSection = document.getElementById('left-down-section');
+
+for (let i = 0; i < rulingDetails.length; i++) {
+    const detailParentContainer = document.createElement("div")
+    const imageContainer = document.createElement("div")
+    const image = document.createElement("img")
+    const mainDetails = document.createElement("div")
+    const names = document.createElement("h5")
+    const title = document.createElement("p")
+    const appellation = document.createElement("p")
+
+// appending
+leftSection.appendChild(detailParentContainer);
+detailParentContainer.appendChild(imageContainer);
+detailParentContainer.appendChild(mainDetails);
+imageContainer.appendChild(image);
+mainDetails.appendChild(names);
+mainDetails.appendChild(title);
+mainDetails.appendChild(appellation);
 
 
-// display of the profile
-    let mapped = profileOfOba.map(profile=>{
-            crestCardContainer.innerHTML += `
-            <div class="row crest-card mb-10" data-id="${profile.id}" id="${profile.id}">
-            <div class="col-4 no-padding">
-            <img style="padding-right:5px;" width="120px" height="120px" src="${profile.image}" alt="">
-            </div>
-            <div class="col-8">
-                <h5 style="font-size: 1rem;" class="serial">
-                ${profile.name}
-                </h5>
-                <p style="font-size:.75rem;padding-top: 5px;">
-                ${profile.span}
-                </p>
-                <h5 style="font-size:.8rem; padding-top: 12px">
-                    Reign
-                </h5>
-                <div class="row ">
-                    <p class="col-6 " style="font-size: .7rem;">
-                       <b>Start:</b> ${profile.start} 
-                       </p>
-                    <p class="col-6 " style="font-size: .7rem;">
-                        <b>End:</b> ${profile.end}
-                        </p>
-                        </div>
-                        </div>
-        </div>
-        `
-        })
-// input.addEventListener('input',(e)=>{
-//     const keyInputed = input.value
-//     const filterText = keyInputed
-//     const filterData = profileOfOba.filter(data=>data.name.toLowerCase().includes(filterText.toLowerCase()))
-//     // console.log(filterData);
-//     filterData.map(profile=>{
-//         crestCardContainer.innerHTML = `
-//         <div class="row crest-card mb-10" data-id="${profile.id}" id="${profile.id}">
-//             <div class="col-4 no-padding">
-//                 <img style="padding-right:5px;" width="120px" height="120px" src="${profile.image}" alt="">
-//             </div>
-//             <div class="col-8">
-//                 <h5 style="font-size: 1rem;" class="serial">
-//                     ${profile.name}
-//                 </h5>
-//                 <p style="font-size:.75rem;padding-top: 5px;">
-//                     ${profile.span}
-//                 </p>
-//                 <h5 style="font-size:.8rem; padding-top: 12px">
-//                     Reign
-//                 </h5>
-//                 <div class="row ">
-//                     <p class="col-6 " style="font-size: .7rem;">
-//                         <b>Start:</b> ${profile.start} 
-//                     </p>
-//                     <p class="col-6 " style="font-size: .7rem;">
-//                         <b>End:</b> ${profile.end}
-//                     </p>
-//                 </div>
-//             </div>
-//         </div>
-//         `
-//     })
-//     console.log(filterData);
-//     e.preventDefault()
-// })
+// classList
+detailParentContainer.classList.add("child-container");
+imageContainer.classList.add("logo-2");
+image.classList.add("image-2");
+mainDetails.classList.add("description");
+names.classList.add("overflow-heading");
+title.classList.add("description-para");
+appellation.classList.add( "d-none")
 
-const crestCard = document.querySelectorAll('.crest-card')
-const clickableCard = crestCard
-const main = document.querySelector('.ginuwa-main-dp')
-const smDp = document.querySelector('.sm-dp-profile')
+// setattribute
 
+image.setAttribute("src", rulingDetails[i].image);
+names.innerText =  rulingDetails[i].name;
+title.innerHTML = rulingDetails[i].title;
+appellation.innerHTML = rulingDetails[i].appellation;
 
-clickableCard.forEach( card=>{
-    card.addEventListener('click', e =>{
-        const crestTarget = e.currentTarget.dataset.id
-        const cardId = e.currentTarget.id
-        const idealCard =  cardId - 1
-        smDp.style.display = "flex"
-        if( crestTarget  ){
-            mainScreenRight(idealCard)
-           smallScreanDp(idealCard)
-        }
-     })
+}
+
+const chiefDetailsContainers = document.querySelectorAll('.child-container');
+const displayName = document.getElementById('display-name');
+const displayTitle = document.getElementById('display-title');
+const displayAppellation = document.getElementById('display-appellation');
+chiefDetailsContainers.forEach((chiefDetailsContainer)=> {
+    chiefDetailsContainer.addEventListener('click' , (e)=> {
+        const name = e.currentTarget.lastElementChild.firstElementChild;
+        const title = name.nextSibling;
+        const appellation = title.nextSibling ;
+
+        displayName.innerText = name.textContent ;
+        displayTitle.innerText = title.textContent;
+        displayAppellation.innerText = appellation.textContent;
+        console.log()
+    })
 })
 
-function mainScreenRight(idealCard) {
-    main.innerHTML = `
-            <div class="ginuwa-crest-display" data-id="${profileOfOba[idealCard]}">
-            <div class="main-dp">
-                <img src="${profileOfOba[idealCard].image}" alt="" width="140px" height="140px">
-            </div>
-            <h5>
-                ${profileOfOba[idealCard].name}   
-            </h5>
-            <p style="font-size:.75rem;padding-top: 5px;">
-                ${profileOfOba[idealCard].span}
-            </p>
-            <h5 style="font-size:.8rem; padding-top: 12px">
-                Reign
-            </h5>
-            <div class="row ">
-                <p class="col-6 " style="font-size: .7rem;">
-                   <b>Start:</b> ${profileOfOba[idealCard].start} 
-                </p>
-                <p class="col-6 " style="font-size: .7rem;">
-                    <b>End:</b> ${profileOfOba[idealCard].end}
-                </p>
-                <p style="font-size: .75rem;padding-top: 10px;">
-                    ${profileOfOba[idealCard].note} 
-                </p>
-            </div>
-        </div>
-            `
-}
-function smallScreanDp(idealCard) {
-    smDp.innerHTML = `
-    <div class="sm-dp-container d-flex align-items-center" data-id="${profileOfOba[idealCard]}>
-    <div class="d-flex align-items-center">
-            <div class="fw-bold bk" style="font-size: 1.2rem ;">
-                
-                &#8592
-            </div>
-            <h5  style="font-size: 14.4px; padding-left:10px">
-            ${profileOfOba[idealCard].name}  
-            </h5>
-    </div>
-    <hr>
-    <div class="ginuwa-crest-display">
-        <div class="main-dp">
-            <img src="${profileOfOba[idealCard].image}" alt="" width="140px" height="140px">
-        </div>
-        <h5 style="font-size: 12.8px; padding-top: 12px;">
-            Lifespan      
-        </h5>
-        <p style="font-size:.75rem;padding-top: 5px;">
-        ${profileOfOba[idealCard].span}
-        </p>
-        <h5 style="font-size:.8rem; padding-top: 12px">
-            Reign
-        </h5>
-        <div class="row ">
-            <p class="col-6 " style="font-size: .7rem;">
-               <b>Start:</b> ${profileOfOba[idealCard].start} 
-            </p>
-            <p class="col-6 " style="font-size: .7rem;">
-                <b>End:</b> ${profileOfOba[idealCard].end}
-            </p>
-            <h5 style="font-size: 12.8px; padding-top: 12px;">
-                Family      
-            </h5>
-            <p style="font-size: .75rem; padding-top: 5px;">
-                ${profileOfOba[idealCard].family}
-            </p>
-            <p style="font-size: .75rem;padding-top: 10px;">
-            ${profileOfOba[idealCard].note} 
-            </p>
-    
-        </div>
-    </div>
-    
-    </div>
-    
-    `
-    const btnBk = document.querySelector('.bk')
-    const returnBtn = btnBk 
-    returnBtn.addEventListener('click',()=>{
-        smDp.style.display = "none"
-    })
-}
 
+export {chiefDetailsContainers}
