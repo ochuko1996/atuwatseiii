@@ -27,7 +27,7 @@ export const profileOfOba = [
         span: "c.1945 - 5 September 2015",
         reign: 'Reign' ,
         start: "<b>Start:</b> 2 May 1987",
-        end: "<b>End:<b> 5 September 2015",
+        end: "<b>End:</b> 5 September 2015",
         family: "Itsekiri",
         biography: "19th Olu. He was born Godwin Toritseju Emiko. He succeeded his father. He was a lawyer by profession and was a recipient of the Commander of the Niger (CON) award from the Nigerian Government. Atuwatse II died in a hospital in Lagos in early September 2015, after suffering a domestic accident. He was 70 years old, and was preparing to fly abroad to receive intensive medical care before his condition worsened."
     },
@@ -38,7 +38,7 @@ export const profileOfOba = [
         span: "c.1908 - 17 December 1986)",
         reign: 'Reign' ,
         start: "<b>Start:</b> 24 March 1951",
-        end: "<b>End:<b> 17 December 1986",
+        end: "<b>End:</b> 17 December 1986",
         family: "Itsekiri",
         biography: "18th Olu. He succeeded his father. He attended a CMS missionary school at Ogbesse, thereafter he did business with United African Company rising to become a provincial cooperatives president. As Olu of Warri, he was appointed regional Minister without portfolio and president of the Warri Divisional Traditional Council."
     },
@@ -49,7 +49,7 @@ export const profileOfOba = [
         span: "7 February 1936 ",
         reign: 'Reign' ,
         start: "<b>Start:</b> Unknown - 1949",
-        end: "<b>End:<b> 8 January 1949",
+        end: "<b>End:</b> 8 January 1949",
         family: "Itsekiri",
         biography: "17th Olu. He was a Nigerian traditional title holder and paramount leader of the Itsekiri. He was born Emiko Ikengbuwa. He succeeded his grandfather Olu Akengbuwa as Olu of Warri after an interregnum that lasted 88 years when Warri's political leadership was dominated by merchant princes."
     },
@@ -60,7 +60,7 @@ export const profileOfOba = [
         span: "14 June 1848 – 7 February 1936 (87 years)",
         reign: 'Reign' ,
         start: "<b>Start:<b>14 June 1848",
-        end: "<b>End:<b> 7 February 1936",
+        end: "<b>End:</b> 7 February 1936",
         family: "",
         biography: "After the death of Olu Dom Eyeolusan João Akengbuwa there was a dynastic crisis following the death of all the potential successors which was followed by a period of political Interregnum. His son Prince Oritsemone left Ode-Itsekiri during the period of the crisis to form the Usele Community. Queen Iye Idolorusan ruled the kingdom for a time in the nineteenth century, but seems to have never been formally designated a monarch.[9]"
     },
@@ -71,7 +71,7 @@ export const profileOfOba = [
         span: "Unknown - 14 June 1848",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1795 ",
-        end: "<b>End:<b> 14 June 1848",
+        end: "<b>End:</b> 14 June 1848",
         family: "Itsekiri",
         biography: "16th Olu. He succeeded his father. He was the last ruling king of the Itsekiri and the last Catholic Olu."
     },
@@ -82,7 +82,7 @@ export const profileOfOba = [
         span: "Unknown - 1795",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1760",
-        end: "<b>End:<b> 1795",
+        end: "<b>End:</b> 1795",
         family: "Itsekiri",
         biography: "15th Olu. He succeeded his father."
     },
@@ -93,7 +93,7 @@ export const profileOfOba = [
         span: "Unknown - 1760",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1734",
-        end: "<b>End:<b> 1760",
+        end: "<b>End:</b> 1760",
         family: "Itsekiri",
         biography: "14th Olu. He succeeded his father."
     },
@@ -104,7 +104,7 @@ export const profileOfOba = [
         span: "Unknown - 1732",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1730",
-        end: "<b>End:<b> 1734",
+        end: "<b>End:</b> 1734",
         family: "Itsekiri",
         biography: "13th Olu. He succeeded his father."
     },
@@ -115,7 +115,7 @@ export const profileOfOba = [
         span: "Unknown - 1730",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1709",
-        end: "<b>End:<b> 1730",
+        end: "<b>End:</b> 1730",
         family: "Itsekiri",
         biography: "12th Olu. He succeeded his father."
     },
@@ -126,7 +126,7 @@ export const profileOfOba = [
         span: "Unknown - 1709",
         reign: 'Reign' ,
         start: "<b>Start:</b>  1701",
-        end: "<b>End:<b> 1701",
+        end: "<b>End:</b> 1701",
         family: "Itsekiri",
         biography: "11th Olu. He succeeded his father. As a prince he was known as Dom Ludivico Domingo."
     },
@@ -137,7 +137,7 @@ export const profileOfOba = [
         span: "Unknown - 1701",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1674",
-        end: "<b>End:<b> 1701",
+        end: "<b>End:</b> 1701",
         family: "Luso Itsekiri",
         biography: "10th Olu. He succeeded his father."
     },
@@ -148,7 +148,7 @@ export const profileOfOba = [
         span: "Unknown - 1674",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1654",
-        end: "<b>End:<b> 1674",
+        end: "<b>End:</b> 1674",
         family: "Luso Itsekiri",
         biography: "9th Olu. He succeeded his brother."
     },
@@ -159,7 +159,7 @@ export const profileOfOba = [
         span: "Unknown - 1653",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1643",
-        end: "<b>End:<b> 1654",
+        end: "<b>End:</b> 1654",
         family: "Luso Itsekiri",
         biography: "8th Olu. He succeeded his father. On ascension to the throne he was named Obanighenren which translates to 'Prince/King with the golden skin'. He wrote a letter to Pope Clement X in 1652 which was delivered to the Pope successfully. He was educated at home and at an institute in Angola. Like his father, he married a Portuguese lady."
     },
@@ -170,7 +170,7 @@ export const profileOfOba = [
         span: "Unknown - 1643",
         reign: 'Reign' ,
         start: "1<b>Start:</b> 625",
-        end: " <b>End:<b> 1643",
+        end: " <b>End:</b> 1643",
         family: "",
         biography: "7th Olu. He succeeded his father. He was initially home schooled by his father and the Bishop in Ode-Itsekiri, which resulted in him being able to read and write in Portuguese. He was later educated in Coimbra, Portugal from 1600 to 1611. He returned as a graduate, making him the first graduate in Sub Saharan Africa. Olu Dom Domingos was the first to marry a noble Portuguese lady, that came with him in 1611."
     },
@@ -181,7 +181,7 @@ export const profileOfOba = [
         span: "Unknown - 1625",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1597",
-        end: "<b>End:<b> 1625",
+        end: "<b>End:</b> 1625",
         family: "Itsekiri",
         biography: "6th Olu. He succeeded his father. He was born Prince Eyomasan. He was the first Catholic Olu, in fact every king after him until 1848 was so. He had a strong tie with King Philip II of Spain, who ruled Portugal at the time. This relation led to him sending his son to study in Coimbra, Portugal from 1600 to 1611. He and all future kings were awarded the title of Dom (D.)."
     },
@@ -192,7 +192,7 @@ export const profileOfOba = [
         span: "Unknown - 1597",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1570",
-        end: "<b>End:<b> 1597",
+        end: "<b>End:</b> 1597",
         family: "Itsekiri",
         biography: "5th Olu.He succeeded his father."
     },
@@ -203,7 +203,7 @@ export const profileOfOba = [
         span: "Unknown - 1570",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1550",
-        end: "<b>End:<b> 1570",
+        end: "<b>End:</b> 1570",
         family: "Itsekiri",
         biography: "4th Olu. He succeeded his father. During his reign, he commenced the process of integration of the Ekpen's/Ekpenede, descendants of Okere with the local population in the kingdom."
     },
@@ -214,7 +214,7 @@ export const profileOfOba = [
         span: "Unknown - 1550",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1538",
-        end: "<b>End:<b> 1550",
+        end: "<b>End:</b> 1550",
         family: "Itsekiri",
         biography: "3rd Olu. He succeeded his brother. It is stated that he banished the three gods (Ibirikimo, Otueke, and Ike) and their worshipers from Ode-Itsekiri-Olu (Big Warri) because of their incessant noise-making. The gods and their worshipers moved to Orugbo which is a community about 3 km from Ode-Itsekiri-Olu."
     },
@@ -225,7 +225,7 @@ export const profileOfOba = [
         span: "Unknown - 1510",
         reign: 'Reign' ,
         start: "<b>Start:</b> 1510",
-        end: "<b>End:<b> 1538",
+        end: "<b>End:</b> 1538",
         family: "Itsekiri",
         biography: "2nd Olu. He succeeded his father. He was the first King to reach Ode-Itsekiri (Big Warri) as his father settled down at Ijala community which became the burial place for all future Olu's."
     },
