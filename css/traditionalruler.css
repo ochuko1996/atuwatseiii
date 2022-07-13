@@ -48,9 +48,8 @@ body{
 
 .up-section{
     background-color: rgb(255,255,255);
-    padding: 0 24px 0 0;
     width:100%;
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -65,26 +64,27 @@ body{
     padding: 2px;
     height: 28px;
     width: 28px;
+    margin-bottom: 20px;
     border-radius: 50%;
     
 }
 .council-1{
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 .council-2{
     font-size: 0.7rem;
     margin-top: 5px;
 }
 .input-container{
-    width: 45%;
-    margin-top: 10px;
+    width: 48%;
+    margin-top: 7px;
 }
 .input-btn{
     width: 100%;
     padding: 0 10px;
-    height: 42px;
+    height: 45px;
     border: 1.5px solid;
     outline: none;
     background: transparent;
@@ -201,8 +201,34 @@ body{
     margin-top: 15px;
 }
 .right-down-para{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 763px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .image-container{
+        display: none;
+    }
+    .left-down-section{
+        width:50%;
+    }
+    .input-container{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .circular-div{
+        display: none;
+    }
 }
 @media screen and (max-width: 576px){
     .container{
