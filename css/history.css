@@ -265,6 +265,7 @@ body {
     }
     .container{
         height: 4000px;
+        padding:5px;
     }
     .history-container{
         flex-direction: column;
@@ -306,11 +307,11 @@ body {
     }
     .history_content {
     color: #212529;
-    margin: 0px 5px 8px 5px ;
+    padding: 0px 5px 8px 5px ;
 }
     .paragraph {
     padding-top: .5rem;
-    margin: 0px 5px 8px 5px ;
+    padding: 0px 5px 8px 5px ;
 
 }
     
